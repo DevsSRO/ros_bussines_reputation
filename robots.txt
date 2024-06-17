@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /mailer
+Disallow: /vendor
+
+Sitemap: https://comnpo.com/sitemap.xml

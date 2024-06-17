@@ -1,0 +1,22 @@
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &_top {
+        margin-right: 80px;
+        margin-left: auto;
+    }
+
+    &__item {
+        &:not(:last-of-type) {
+            margin-right: 80px;
+        }
+    }
+
+    &__link {
+        @include link(600, #fff);
+        text-transform: uppercase;
+    }
+}

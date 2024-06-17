@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// @import url('../../src/fonts/https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-BoldItalic.eot');
+    src: local('Inter Bold Italic'), local('Inter-BoldItalic'),
+        url('../../src/fonts/Inter-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-BoldItalic.woff2') format('woff2'),
+        url('../../src/fonts/Inter-BoldItalic.woff') format('woff'),
+        url('../../src/fonts/Inter-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-MediumItalic.eot');
+    src: local('Inter Medium Italic'), local('Inter-MediumItalic'),
+        url('../../src/fonts/Inter-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-MediumItalic.woff2') format('woff2'),
+        url('../../src/fonts/Inter-MediumItalic.woff') format('woff'),
+        url('../../src/fonts/Inter-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-ThinItalicBETA.eot');
+    src: local('Inter Thin Italic BETA'), local('Inter-ThinItalicBETA'),
+        url('../../src/fonts/Inter-ThinItalicBETA.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-ThinItalicBETA.woff2') format('woff2'),
+        url('../../src/fonts/Inter-ThinItalicBETA.woff') format('woff'),
+        url('../../src/fonts/Inter-ThinItalicBETA.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-Regular.eot');
+    src: local('Inter Regular'), local('Inter-Regular'),
+        url('../../src/fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-Regular.woff2') format('woff2'),
+        url('../../src/fonts/Inter-Regular.woff') format('woff'),
+        url('../../src/fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-Black.eot');
+    src: local('Inter Black'), local('Inter-Black'),
+        url('../../src/fonts/Inter-Black.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-Black.woff2') format('woff2'),
+        url('../../src/fonts/Inter-Black.woff') format('woff'),
+        url('../../src/fonts/Inter-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-BlackItalic.eot');
+    src: local('Inter Black Italic'), local('Inter-BlackItalic'),
+        url('../../src/fonts/Inter-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-BlackItalic.woff2') format('woff2'),
+        url('../../src/fonts/Inter-BlackItalic.woff') format('woff'),
+        url('../../src/fonts/Inter-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-LightBETA.eot');
+    src: local('Inter Light BETA'), local('Inter-LightBETA'),
+        url('../../src/fonts/Inter-LightBETA.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-LightBETA.woff2') format('woff2'),
+        url('../../src/fonts/Inter-LightBETA.woff') format('woff'),
+        url('../../src/fonts/Inter-LightBETA.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-SemiBold.eot');
+    src: local('Inter Semi Bold'), local('Inter-SemiBold'),
+        url('../../src/fonts/Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-SemiBold.woff2') format('woff2'),
+        url('../../src/fonts/Inter-SemiBold.woff') format('woff'),
+        url('../../src/fonts/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-ExtraBoldItalic.eot');
+    src: local('Inter Extra Bold Italic'), local('Inter-ExtraBoldItalic'),
+        url('../../src/fonts/Inter-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-ExtraBoldItalic.woff2') format('woff2'),
+        url('../../src/fonts/Inter-ExtraBoldItalic.woff') format('woff'),
+        url('../../src/fonts/Inter-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-Bold.eot');
+    src: local('Inter Bold'), local('Inter-Bold'),
+        url('../../src/fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-Bold.woff2') format('woff2'),
+        url('../../src/fonts/Inter-Bold.woff') format('woff'),
+        url('../../src/fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-ExtraLightItalicBETA.eot');
+    src: local('Inter Extra Light Italic BETA'), local('Inter-ExtraLightItalicBETA'),
+        url('../../src/fonts/Inter-ExtraLightItalicBETA.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-ExtraLightItalicBETA.woff2') format('woff2'),
+        url('../../src/fonts/Inter-ExtraLightItalicBETA.woff') format('woff'),
+        url('../../src/fonts/Inter-ExtraLightItalicBETA.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-ExtraLightBETA.eot');
+    src: local('Inter Extra Light BETA'), local('Inter-ExtraLightBETA'),
+        url('../../src/fonts/Inter-ExtraLightBETA.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-ExtraLightBETA.woff2') format('woff2'),
+        url('../../src/fonts/Inter-ExtraLightBETA.woff') format('woff'),
+        url('../../src/fonts/Inter-ExtraLightBETA.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-ExtraBold.eot');
+    src: local('Inter Extra Bold'), local('Inter-ExtraBold'),
+        url('../../src/fonts/Inter-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-ExtraBold.woff2') format('woff2'),
+        url('../../src/fonts/Inter-ExtraBold.woff') format('woff'),
+        url('../../src/fonts/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-ThinBETA.eot');
+    src: local('Inter Thin BETA'), local('Inter-ThinBETA'),
+        url('../../src/fonts/Inter-ThinBETA.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-ThinBETA.woff2') format('woff2'),
+        url('../../src/fonts/Inter-ThinBETA.woff') format('woff'),
+        url('../../src/fonts/Inter-ThinBETA.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-LightItalicBETA.eot');
+    src: local('Inter Light Italic BETA'), local('Inter-LightItalicBETA'),
+        url('../../src/fonts/Inter-LightItalicBETA.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-LightItalicBETA.woff2') format('woff2'),
+        url('../../src/fonts/Inter-LightItalicBETA.woff') format('woff'),
+        url('../../src/fonts/Inter-LightItalicBETA.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-Italic.eot');
+    src: local('Inter Italic'), local('Inter-Italic'),
+        url('../../src/fonts/Inter-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-Italic.woff2') format('woff2'),
+        url('../../src/fonts/Inter-Italic.woff') format('woff'),
+        url('../../src/fonts/Inter-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-SemiBoldItalic.eot');
+    src: local('Inter Semi Bold Italic'), local('Inter-SemiBoldItalic'),
+        url('../../src/fonts/Inter-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-SemiBoldItalic.woff2') format('woff2'),
+        url('../../src/fonts/Inter-SemiBoldItalic.woff') format('woff'),
+        url('../../src/fonts/Inter-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../src/fonts/Inter-Medium.eot');
+    src: local('Inter Medium'), local('Inter-Medium'),
+        url('../../src/fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Inter-Medium.woff2') format('woff2'),
+        url('../../src/fonts/Inter-Medium.woff') format('woff'),
+        url('../../src/fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@import 'options/vars',
+'options/typography';
+
+@import 'blocks/section',
+'blocks/header',
+'blocks/nav',
+'blocks/menu',
+'blocks/card';
+
+body {
+    background-color: #E7E7E7;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: $text-default;
+    line-height: 116%;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    position: fixed;
+    overflow: hidden;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    overflow: visible;
+    transition: transform 1s ease-out;
+}
+
+.phone {
+    @include link(600, $accent);
+
+    &_large {
+        @include link(500, $dark, $dark, 24);
+    }
+}
+
+.mail {
+    @include link(500, $dark, $dark, 24);
+}
+
+.row {
+    display: flex;
+
+    &>* {
+        flex: 1;
+    }
+
+    &>*:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+.steps {
+    &__item {
+        display: flex;
+        padding: 24px 80px 40px;
+        align-items: flex-end;
+        background-color: $dark;
+        border-radius: 40px;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        & h3 {
+            margin-right: 24px;
+            white-space: nowrap;
+            align-self: flex-start;
+        }
+
+        & * {
+            color: #fff;
+        }
+
+        &:last-child p {
+            padding-top: 16px;
+        }
+    }
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+
+    &__left {
+        margin-right: 80px;
+        flex: 0 0 490px;
+        width: 490px;
+        max-width: 490px;
+
+        & img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    &_right {
+        flex-grow: 1;
+    }
+}
+
+.reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+    &__item {
+        margin-bottom: 33px;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        transition: .3s;
+
+        &_active {
+            border-color: $accent;
+        }
+
+        &:not(:nth-child(3n)) {
+            margin-right: 28px;
+        }
+    }
+}
+
+.custom-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    &__inp {
+        background-color: #fff;
+        border: 0 none;
+        border-radius: 20px;
+        padding: 24px 40px;
+        width: 100%;
+        line-height: 150%;
+        font-size: 24px;
+        margin-bottom: 32px;
+
+        &,
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            color: rgba($text-default, .6);
+            line-height: 150%;
+            font-weight: 500;
+        }
+    }
+}
+
+.request {
+    display: flex;
+    padding: 0 80px;
+
+    &__left {
+        margin-right: 80px;
+        flex-grow: 1;
+    }
+
+    & .title {
+        margin-bottom: 60px;
+    }
+
+    & .custom-form {
+        margin-bottom: 32px;
+    }
+
+    &__right {
+        text-align: center;
+
+        & img {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.footer {
+    background-color: $dark;
+    @include section;
+    border-radius: 0;
+
+    & .caption {
+        color: #fff;
+    }
+
+    &>.content-wrap {
+        display: flex;
+        align-items: center;
+        padding: 0 80px;
+    }
+
+    &__right {
+        flex-grow: 1;
+        text-align: right;
+
+        & .caption:first-of-type {
+            margin-right: 40px;
+        }
+    }
+}
+
+.main-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__right {
+        margin-right: 36px;
+    }
+}
+
+.contacts {
+    display: flex;
+    padding: 0 80px;
+
+    &>*:first-of-type {
+        margin-right: 32px;
+    }
+}
+
+.map {
+    padding: 0 80px;
+
+    & iframe {
+        filter: grayscale(.8);
+        border-radius: 40px;
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.8) translateY(10000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        background: rgba($dark, .6);
+    }
+}
+
+@keyframes quickScaleDown {
+    0% {
+        transform: scale(1);
+    }
+
+    99.9% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        background: rgba($dark, .6);
+    }
+
+    100% {
+        background: rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes scaleDown {
+    0% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.8) translateY(1000px);
+        opacity: 0;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    // display: none;
+    // opacity: 0;
+    transform: scale(0);
+
+    &__overlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($dark, .6);
+    }
+
+    &__content {
+        background-color: #E7E7E7;
+        padding: 80px 165px;
+        border-radius: 60px;
+        min-width: 944px;
+        position: relative;
+
+        &>*:first-child {
+            margin-bottom: 60px;
+        }
+
+        &>*:nth-child(2) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &_fade {
+        transform: scale(1);
+    }
+
+    &_close {
+        animation: quickScaleDown 0s 0.5s linear forwards;
+    }
+
+    &_fade &__overlay {
+        background: rgba(0, 0, 0, 0);
+        animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    }
+
+    &_close &__overlay {
+        animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    }
+
+    &_fade &__content {
+        opacity: 0;
+        animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    }
+
+    &_close &__content {
+        animation: scaleDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__close {
+        @include link(700, $dark, $dark, 44);
+        font-style: italic;
+    }
+}

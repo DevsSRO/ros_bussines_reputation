@@ -1,0 +1,87 @@
+.title {
+    line-height: 1.2;
+
+    &_center {
+        text-align: center;
+    }
+
+    &_line {
+        @include line($dark, 32);
+    }
+}
+
+h1.title,
+h2.title {
+    font-size: 100px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    & span {
+        font-style: italic;
+    }
+}
+
+h3.title {
+    font-size: 44px;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+
+    &:not(&_normal) {
+        font-style: italic;
+    }
+
+    &_accent {
+        color: $accent;
+        transform: translateY(-13px);
+    }
+
+    &_inside-accent {
+        & span {
+            color: $accent;
+        }
+    }
+}
+
+p.text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+
+    &_line {
+        @include line($accent, 16);
+    }
+
+    &_center {
+        text-align: center;
+    }
+}
+
+.caption {
+    color: rgba($text-default, .6);
+
+}
+
+.button {
+    background-color: #0265FF;  
+    color: #fff;
+    border-radius: 20px; 
+    text-transform: uppercase;
+    padding: 20px 40px;
+    font-weight: 700;
+    font-size: 44px;
+    border: 0 none;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.image-radius {
+    border-radius: 20px;
+}
+
+.image-border {
+    border: 2px solid transparent;
+
+    &_accent {
+        border-color: $accent;
+    }
+}

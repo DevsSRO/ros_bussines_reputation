@@ -1,0 +1,58 @@
+// colors
+$dark: #1B1B29;
+$accent: #0265FF;
+$text-default: #1B1B29;
+
+// wrap
+$content-wrap: 1110;
+$wrap: 1270;
+$padding-wrap: calc(($wrap - $content-wrap) / 2);
+
+// mixins
+@mixin section {
+    border-radius: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    & .content-wrap {
+        max-width: #{$wrap}px;
+        margin: 0 auto;
+    }
+
+    & .padding-wrap {
+        padding: 0 80px;
+    }
+}
+
+@mixin link($fw, $c, $ch: $c, $fz: 18) {
+    text-decoration: none;
+    font-weight: $fw;
+    transition: .3s;
+    font-size: $fz + px;
+
+    &:active,
+    &:link,
+    &:visited {
+        color: $c;
+    }
+
+    &:hover {
+        color: $ch;
+    }
+}
+
+@mixin line($c: $dark, $top: 16) {
+    position: relative;
+    padding-top: $top + px;
+    margin-top: 13px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 13px;
+        width: 100px;
+        background-color: $c;
+        top: 0;
+        transform: translateY(-100%);
+    }
+}

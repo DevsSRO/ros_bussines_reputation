@@ -1,0 +1,9 @@
+.nav {
+    padding: 0 #{$padding-wrap}px;
+    display: flex;
+    align-items: center;
+
+    &_top {
+        margin-bottom: 36px;
+    }
+}
